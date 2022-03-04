@@ -1,0 +1,17 @@
+<launch>
+  <node pkg="rosserial_server" name="socket" type="socket_node" output="screen"/>
+  <rosparam command="load" file="$(find oculus_bridge)/config/JoyBridge_Config.yaml"/>
+
+  <!-- <include file="$(find zed_cpu_ros)/launch/zed_cpu_ros.launch"/> -->
+  <node pkg="oculus_bridge" name="node_simvideostream" type="node_simvideostream" output="screen"/>
+
+  <group ns="left_arm">
+    <node pkg="oculus_bridge" name="node_joybridge" type="node_joybridge" output="screen"/>
+    <!--node pkg="oculus_bridge" name="node_videostream" type="node_videostream" output="screen"/-->
+  </group>
+  <group ns="right_arm">
+    <node pkg="oculus_bridge" name="node_joybridge" type="node_joybridge" output="screen"/>
+    <!--node pkg="oculus_bridge" name="node_videostream" type="node_videostream" output="screen"/-->
+  </group>
+
+</launch>

@@ -1,0 +1,4 @@
+<launch>
+     <node pkg="qb_control" name="node_qbmanager" type="node_qbmanager" output="screen"/>
+
+</launch>

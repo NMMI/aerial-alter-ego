@@ -1,0 +1,42 @@
+left_arm:
+  name_param: "left_arm"
+  topic_index_param: "/LH_ind"
+  topic_track_param: "/LH_track"
+  topic_middle_param: "/LH_hand"
+  topic_joy_x: "/LH_joy_x"
+  topic_joy_y: "/LH_joy_y"
+  topic_button1: "/Button_X"
+  topic_button2: "/Button_Y"
+
+  cmd_joy_x: "/drone_control/yawRate"
+  cmd_joy_y: "/drone_control/thrust"
+  cmd_button1: "/drone_control/buttonX"
+  cmd_button2: "/drone_control/buttonY"
+
+  cmd_pose_ref: "pose_ref_endeffctor"
+  length_arm_robot_param: 0.47 # drone arm
+  Vec_robotbase2shoulder_param: [0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, -1.0] #//drone right arm 
+  topic_state_joy_param: "state_joy"
+  cmd_closure_hand: "hand_closure"
+
+right_arm:
+  name_param: "right_arm"
+  topic_index_param: "/RH_ind"
+  topic_track_param: "/RH_track"
+  topic_middle_param: "/RH_hand"
+  topic_joy_x: "/RH_joy_x"
+  topic_joy_y: "/RH_joy_y"
+  topic_button1: "/Button_A"
+  topic_button2: "/Button_B"
+
+  cmd_joy_x: "/drone_control/roll"
+  cmd_joy_y: "/drone_control/pitch"
+  cmd_button1: "/drone_control/drone_arm_cmd"
+  cmd_button2: "/drone_control/buttonB"
+  
+  cmd_pose_ref: "pose_ref_endeffctor"
+  length_arm_robot_param: 0.47 # drone arm
+  Vec_robotbase2shoulder_param: [0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, -1.0] #//drone right arm 
+  topic_state_joy_param: "state_joy"
+  cmd_closure_hand: "hand_closure"
+  

@@ -1,0 +1,6 @@
+<launch>
+  <include file="$(find oculus_bridge)/launch/oculus_bridge_sim.launch"/>
+  <include file="$(find head_control)/launch/head.launch"/>
+  <include file="$(find arm_invkinematics)/launch/arm_invkinematics.launch"/>
+
+</launch>

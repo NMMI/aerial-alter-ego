@@ -1,0 +1,17 @@
+head:
+  DH_Xtr: [0, 0]
+  DH_Xrot: [-1.57, 1.57]
+  DH_Ztr: [0, 0]
+  DH_Zrot: [0, 0]
+  T_t2s: [1, 0, 0, 0.061, 0, 1, 0, 0, 0, 0, 1, 0.218, 0, 0, 0, 1]
+  T_o2t: [1, 0, 0, 0.061, 0, 1, 0, 0, 0, 0, 1, 0.218, 0, 0 ,0, 1]
+  R_o2b: [0, 0, -1, -1, 0, 0, 0, 1, 0]
+  q_min: [-1.57, -1.57]
+  q_max: [1.57, 1.57]
+  pose_ref_topic: "/Head_track"
+  stiff_ref_topic: "stiff_ref_pose"
+  phantom_arm_topic: "/phantom_head/control/joint_states"
+  ref_head_topic: "/ref_neck"
+  qbmove_tf_ids: [21, 22]
+  active_back_pos: 1
+  head_frequency: 50

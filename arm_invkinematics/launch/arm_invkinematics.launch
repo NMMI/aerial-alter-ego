@@ -1,0 +1,7 @@
+<launch>
+	
+	<rosparam command="load" file="$(find arm_invkinematics)/config/ArmInvKin_Config.yaml"/>
+	<node name="node_arminvkine" pkg="arm_invkinematics" type="node_arminvkine" output="screen" />
+	<node name="node_arminvrout" pkg="arm_invkinematics" type="node_arminvrout" />
+    
+</launch>

@@ -1,0 +1,6 @@
+<launch>
+
+	<rosparam command="load" file="$(find head_control)/config/head_config.yaml"/>
+	<node name="node_head_control" pkg="head_control" type="head_control" output="screen" />
+
+</launch>

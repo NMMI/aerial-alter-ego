@@ -1,0 +1,4 @@
+jointPosi_upThresh_param: [1.0471975, 1.5707963, 0.0, 1.5707963, 3.1415926] 
+jointPosi_downThresh_param: [-1.0471975, 0.0, -1.5707963, 0.0, -3.1415926] 
+jointVelLimit_param: 10.0
+jointVelLimit_reset_param:  1.0
